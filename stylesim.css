@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+body {
+    background: #fff;
+}
+
+header {
+    background: #254a9e;
+    color: #fff;
+    height:70vh;
+}
+
+.left-side,
+.right-side {
+    height: 100vh;
+}
+
+
+.navbar-transparent {
+    background: transparent
+}
+
+.navbar-nav>li>a {
+    color: #fff
+}
+
+.navbar-nav>li:hover {
+    border-bottom: 1px solid #fff
+}
+
+.navbar-nav>.active {
+    border-bottom: 1px solid #fff
+}
+
+.navbar-brand {
+    font-family: 'Allerta Stencil', sans-serif;
+    color: #1475ad
+}
+
+.navbar-brand:hover {
+    color: #fff
+}
+
+.left-side img {
+    padding-top: 100px;
+    padding-right: 0px;
+}
+@media only screen and (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Align items vertically in the center */
+        
+    }
+
+       header{
+        background: #254a9e;
+        color: #fff;
+        height:89vh;
+       }
+       .row:nth-child(2) {
+        /* Your styles here */
+        display: flex;
+        flex-direction: row; /* This is not valid Bootstrap class behavior */
+        justify-content: center;
+    }
+    .row:nth-child(1) p {
+        text-align: center;
+    }
+    
+    
+
+    
+
+}
+
+
+
+@media only screen and (min-width: 1300px) {
+    .left-side img {
+        margin-left: -120px; /* Adjust margin-left to move the image to the left */
+    }
+    .right-side {
+        padding-top: 150px;
+        margin-left:80px;
+    }
+    
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-collapse {
+        position: absolute;
+        background-color: transparent;
+        top: 100%;
+        left: 15px;
+        width: 100%;
+        z-index: 1000;
+    
+    }
+}
+
+.shape {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #bcb3b3, #195a96 70%);
+    position: absolute;
+    -webkit-clip-path: ellipse(500px 500px at 10% 5%);
+    clip-path: ellipse(500px 500px at 10% 5%);
+}
+.right-side {
+    padding-top: 150px
+}
+
+.right-side h1 {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 2.4em;
+    text-align: center
+}
+
+.right-side p {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold
+}
+
+.btn.order-button {
+    background: transparent;
+    border: 2px solid rgb(220, 219, 233);
+    color: rgb(220, 219, 233);
+    border-radius: 30%;
+    transition: 0.7s
+}
+
+
+.btn.order-button:hover {
+    border: 2px solid #83ff00;
+    color: #83ff00
+}
+
+.navbar-toggler {
+    background-color: transparent; /* Make the background transparent */
+    border-color: rgba(255, 255, 255, 0.5); /* Adjust border color to be semi-transparent */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus {
+
+outline-color: rgb(220, 219, 233);
+    box-shadow:#d8dadd; /* Remove any default box shadow */
+}
+
+
+.emph{
+    color:#254A9E;
+
+    font-weight: bold;
+}
+
+.lead .small{
+ font-family: 'Inter', sans-serif;
+}
+.small{
+    font-size: 1.2em;
+}
+
+
+.arrow {
+    color: #195a96;
+}
+
+/* Define a custom scrollbar style */
+
+.cd {
+    background: white;
+    border: #1475ad solid 3px;
+    border-radius: 15px;
+    border-top-color: #1475ad; /* Set to the same color as the other borders */
+    /* border-top-color: transparent; /* If you want the top border to be transparent */
+}
+
+
+.card {
+    transition: box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: inset 0 -10px 25px rgba(168, 167, 176, 0.8), inset 0 10px 25px #195a96;
+}
+
+
+.about-me{
+        background: linear-gradient(to bottom, #dfd6d6, #7a94ad 100%);
+
+}
+
+.hide-scrollbar{
+    scrollbar-width: none !important;
+}
+
+#portfolio{
+   
+}
+
+.container-fluid {
+    padding:0;
+
+    margin-right: auto;
+    margin-left: auto;
+}
