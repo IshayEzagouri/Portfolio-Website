@@ -50,6 +50,9 @@ header {
     padding-right: 0px;
 }
 @media only screen and (max-width: 768px) {
+    body,html{
+        overflow-x: hidden;
+    }
     .row {
         display: flex;
         flex-direction: column;
@@ -71,15 +74,15 @@ header {
     .row:nth-child(1) p {
         text-align: center;
     }
-    
-    
-
-    
-
 }
 
 
-
+@supports (-webkit-appearance:none) {
+    /* Adjust header height for Safari */
+    header {
+        height:80vh; /* Adjusted height for Safari */
+    }
+}
 
 @media only screen and (min-width: 1300px) {
     .left-side img {
@@ -102,6 +105,7 @@ header {
         z-index: 1000;
     
     }
+
 }
 
 .shape {
@@ -200,6 +204,7 @@ outline-color: rgb(220, 219, 233);
         background: linear-gradient(to bottom, #dfd6d6, #7a94ad 100%);
 
 }
+
 
 .hide-scrollbar{
     scrollbar-width: none !important;
