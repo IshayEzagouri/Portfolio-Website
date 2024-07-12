@@ -12,6 +12,8 @@ header {
     height:70vh;
 }
 
+
+
 .left-side,
 .right-side {
     height: 100vh;
@@ -58,7 +60,7 @@ header {
        header{
         background: #254a9e;
         color: #fff;
-        height:89vh;
+        height:100vh;
        }
        .row:nth-child(2) {
         /* Your styles here */
@@ -75,6 +77,7 @@ header {
     
 
 }
+
 
 
 
