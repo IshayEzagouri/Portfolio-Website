@@ -178,18 +178,31 @@ img.w-100.rounded-pill {
 /* Define the navbar animation */
 .navbar {
     opacity: 0;
-    transform: translateX(-50px);
-    animation: slideIn 1s forwards;
-    animation-delay: 1.8s; /* Adjust this delay to start after the image animation */
+    transform: translateY(-50px);
+    animation: slideInDown 1s forwards;
+    animation-delay: 1s; /* Adjust delay as needed */
 }
 
-@keyframes slideIn {
+@keyframes slideInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Sub title animation */
+.animate-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 1s forwards;
+    animation-delay: 1s; /* Adjust delay as needed */
+}
+
+@keyframes slideInLeft {
     to {
         opacity: 1;
         transform: translateX(0);
     }
 }
-
 
 .btn.order-button:hover {
     border: 2px solid #83ff00;
