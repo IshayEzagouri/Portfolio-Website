@@ -27,7 +27,7 @@
 
 <body>
     <div class="container-fluid px-0">
-        <header>
+        <header id="main-header">
             <div class="shape"></div>
             <!-- Navbar -->
             <nav class="navbar  order-1 navbar-expand-lg navbar-transparent">
@@ -153,16 +153,16 @@
                     </div>
                     <div class="row">
                         <div class="col-5 ml-md-1">
-                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary">Flutter</span></p>
-                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary">React</span></p>
-                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary">HTML</span></p>
-                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary">CSS</span></p>
+                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary p-1">Flutter</span></p>
+                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary p-1">React</span></p>
+                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary p-1">HTML</span></p>
+                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary p-1">CSS</span></p>
                         </div>
                         <div class="col-5 ml-md-1">
-                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary">Arduino</span></p>
-                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary">NodeJS</span></p>
-                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary">C#</span></p>
-                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary">C</span></p>
+                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary p-1">Arduino</span></p>
+                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary p-1">NodeJS</span></p>
+                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary p-1">C#</span></p>
+                            <p class="lead text-white small text-md-left text-center"><span class="badge-pill bg-primary p-1">C</span></p>
                         </div>
                     </div>
                 </div>
@@ -361,7 +361,16 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+        <script>
+            // Detect Safari
+            const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    
+            // Apply specific styles if Safari
+            if (isSafari) {
+                const header = document.getElementById('main-header');
+                header.style.height = '80vh'; // Adjusted height for Safari
+            }
+        </script>
 </body>
 
 <footer id="footer" class="bg-dark text-light mt-5 p-0">
