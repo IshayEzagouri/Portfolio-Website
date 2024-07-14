@@ -131,13 +131,63 @@ header {
     text-align: center;
     font-weight: bold
 }
-
+/* Define the button animations */
 .btn.order-button {
     background: transparent;
     border: 2px solid rgb(220, 219, 233);
     color: rgb(220, 219, 233);
     border-radius: 30%;
-    transition: 0.7s
+    transition: 0.7s;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fallIn 1s forwards;
+}
+
+.btn:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.btn:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.btn:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+@keyframes fallIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Define the image animation */
+img.w-100.rounded-pill {
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Increase animation duration for slower effect */
+    animation-delay: 1s; /* Adjust this delay to start earlier */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Define the navbar animation */
+.navbar {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1s forwards;
+    animation-delay: 1.8s; /* Adjust this delay to start after the image animation */
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 
@@ -201,8 +251,7 @@ outline-color: rgb(220, 219, 233);
 
 
 .about-me{
-        background: linear-gradient(to bottom, #dfd6d6, #7a94ad 100%);
-
+        background: #fff;
 }
 
 
