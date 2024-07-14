@@ -274,11 +274,3 @@ outline-color: rgb(220, 219, 233);
     margin-right: auto;
     margin-left: auto;
 }
-
-@supports (-webkit-marquee-style: inherit) {
-    /* Safari-specific styles go here */
-    header {
-        height: 100vh; /* Adjusted height for Safari */
-        background-color: red; /* Example styling */
-    }
-}
