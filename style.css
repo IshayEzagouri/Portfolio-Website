@@ -80,7 +80,7 @@ header {
 @supports (-webkit-appearance:none) {
     /* Adjust header height for Safari */
     header {
-        height:פםvh; /* Adjusted height for Safari */
+        height:90vh; /* Adjusted height for Safari */
     }
 }
 
