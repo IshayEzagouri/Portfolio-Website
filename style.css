@@ -275,3 +275,29 @@ outline-color: rgb(220, 219, 233);
     margin-right: auto;
     margin-left: auto;
 }
+
+
+.social_icon li{
+    list-style: none;
+
+}
+
+footer .social_icon li a {
+    font-size: 2em;
+    color: #ccc;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+
+  footer .social_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+  footer .social_icon li a:hover {
+    transform: translateY(-15px);
+    color: blue;
+  }
